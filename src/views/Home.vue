@@ -43,7 +43,7 @@ export default {
   },
 
   async mounted() {
-    Az.Morph.init("../dicts/", (err, Morph) => {
+    Az.Morph.init("dicts/", (err, Morph) => {
       const capitalize = s => {
         if (typeof s !== "string") {
           return "";
